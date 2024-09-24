@@ -1,6 +1,6 @@
 import requests
 from icecream import ic
-import sys
+# import sys
 import datetime
 
 def kurs_euro():
@@ -14,9 +14,9 @@ def kurs_euro():
     url = euro_url + str_yesterday
     
     resp = requests.get(url)
-    if not resp.ok:
-        print("Błąd pobierania danych")
-        sys.exit(1)
+    # if not resp.ok:
+    #     print("Błąd pobierania danych")
+    #     sys.exit(1)
     
     tableA = resp.json()
     kurs_euro_ = tableA["rates"][0]['mid']
