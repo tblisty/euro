@@ -1,3 +1,2 @@
-requests
-icecream
-datetime
+Flask
+Gunicorn
